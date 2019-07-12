@@ -7,8 +7,7 @@ import com.jacob.start.Main;
 
 public class Challenger {
 	
-	
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 		final int NOMBRE_ESSAI = 3;
 		char reponse = 'O';
 		Scanner sc = new Scanner(System.in);
@@ -18,7 +17,7 @@ public class Challenger {
 		System.out.println("********************");
 		
 		//Boucle nombre d'essai
-		for(int j = 0 ; j < NOMBRE_ESSAI ; j++) {
+		//for(int j = 0 ; j < NOMBRE_ESSAI ; j++) {
 		while(reponse == 'O' ) {
 			Random rand = new Random();
 			
@@ -63,13 +62,13 @@ public class Challenger {
 		reponse = sc.nextLine().charAt(0);
 		
 		}
-		}
+		//}
 //	}
 		//Retour au menu principal
 		Main retour = new Main();
 		retour.main(args);
-		
-
 	}
+
+	
 
 }

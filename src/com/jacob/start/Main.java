@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.jacob.challenger.Challenger;
 import com.jacob.defender.Defender;
+import com.jacob.duel.Duel;
 
 public class Main {
 
@@ -18,7 +19,7 @@ public class Main {
 		
 		switch(mode){
 			case 1:
-				Challenger choice = new Challenger();
+				Defender choice = new Defender();
 				choice.main(args);
 				break;
 			case 2:
@@ -26,7 +27,8 @@ public class Main {
 				choice2.main(args);
 				break;
 			case 3:
-				System.out.println("Duel");
+				Duel choice3 = new Duel();
+				choice3.main(args);
 				break;
 			default:
 				System.out.println("Valeur invalide!");
