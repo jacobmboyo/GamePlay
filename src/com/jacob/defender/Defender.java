@@ -7,8 +7,10 @@ import com.jacob.start.Main;
 
 public class Defender {
 	
-	public static void main (String[] args) {
+	public void jeux() {
+		
 		char reponse = 'O';
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Mode Defender");
@@ -63,7 +65,6 @@ public class Defender {
 		
 	}//Fin de la boucle
 		//Retour au menu principal
-		Main retour = new Main();
-		retour.main(args);
+
 	}
 }

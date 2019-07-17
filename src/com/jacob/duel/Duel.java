@@ -9,7 +9,7 @@ import com.jacob.start.Main;
 
 public class Duel {
 
-	public static void main(String[] args) {
+	public void jeux() {
 		char reponse = 'O';
 		Scanner sc = new Scanner(System.in);
 		
@@ -19,7 +19,7 @@ public class Duel {
 		
 //		while(reponse == 'O' ) {
 	
-		
+
 		System.out.print("Saisir la combinaison secrête: ");
 		Scanner proposition = new Scanner(System.in);
 		String choice = (String) proposition.nextLine();
@@ -33,7 +33,7 @@ public class Duel {
 		
 		int tableau[] = {rand.nextInt(10), rand.nextInt(10), rand.nextInt(10), rand.nextInt(10)};
 		
-		//Insertion des valeurs Random dans un Tableau
+		//Insertion des valeurs Random dans un Tableau//Afficher le tableau par la boucle for
 		System.out.println("\nProposition de l'Intelligence Artificielle: " + tableau[0] + tableau[1] +  tableau[2] + tableau[3]);
 		
 		//Vérifier si les valeurs contenues dans les 2 tableaux sont correctes
@@ -51,12 +51,14 @@ public class Duel {
 		//Comparaison des valeurs Random avec les valeurs saisies par l'utilisateur
 		System.out.print("A votre tour de jouer: ");
 		
-		//Récupération des valeurs saisi (+-/*)
-		Scanner combinaisonSaisi = new Scanner(System.in);
-		String combinaison = (String) combinaisonSaisi.nextLine();
+
 		
-		//Insertion des valeurs saisies par l'utilisateur dans un Tableau
-		int valeur2[] = {combinaison.charAt(0), combinaison.charAt(1), combinaison.charAt(2), combinaison.charAt(3)};
+//		//Récupération des valeurs saisi (+-/*)
+//		Scanner combinaisonSaisi = new Scanner(System.in);
+//		String combinaison = (String) combinaisonSaisi.nextLine();
+//		
+//		//Insertion des valeurs saisies par l'utilisateur dans un Tableau
+//		int valeur2[] = {combinaison.charAt(0), combinaison.charAt(1), combinaison.charAt(2), combinaison.charAt(3)};
 
 //		System.out.println("\n\nVoulez-vous réessayer? (OUI/NON)");
 //		
@@ -65,9 +67,9 @@ public class Duel {
 //		
 //	} Fin de la boucle while
 		
-		//Retour au menu principal
-		Main retour = new Main();
-		retour.main(args);
+
+
+		
 
 	}
 

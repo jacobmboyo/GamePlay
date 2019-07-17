@@ -1,5 +1,6 @@
 package com.jacob.start;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.jacob.challenger.Challenger;
@@ -14,27 +15,31 @@ public class Main {
 		System.out.println("1= Challenger\n2= Defender\n3= Duel");
 		
 		Scanner clavier = new Scanner(System.in);
+		
+		try {
+			
 		int mode = clavier.nextInt();
-		
-		
+
 		switch(mode){
 			case 1:
-				Defender choice = new Defender();
-				choice.main(args);
+				Challenger choice = new Challenger();
+				choice.jeux();
 				break;
 			case 2:
 				Defender choice2 = new Defender();
-				choice2.main(args);
+				choice2.jeux();
 				break;
 			case 3:
 				Duel choice3 = new Duel();
-				choice3.main(args);
+				choice3.jeux();
 				break;
 			default:
-				System.out.println("Valeur invalide!");
+				System.out.println("Désolé, Vous devriez saisir un chiffre comme 1, 2 ou 3\"");
 		}
 		
-		
+		}catch(InputMismatchException e) {
+			System.out.println("Désolé, Vous devriez saisir un chiffre comme 1, 2 ou 3");
+		}
 
 	}
 
